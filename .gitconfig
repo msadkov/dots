@@ -1,0 +1,20 @@
+[merge]
+	defaultToUpstream = true
+[push]
+	default = current
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[alias]
+	pr = "!f() { git fetch origin refs/pull/$1/head:pr/$1; } ; f"
+	st = status
+	ci = commit
+	co = checkout
+	k = log --graph --oneline --decorate --branches --tags
+	br = branch -vv
+[color]
+	ui = auto
+[core]
+	excludesfile = ~/.gitignore
+	editor = vim
