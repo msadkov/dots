@@ -18,3 +18,6 @@
 [core]
 	excludesfile = ~/.gitignore
 	editor = vim
+[user]
+	name = Michael Sadkov
+	email = michael@sadkov.com
