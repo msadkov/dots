@@ -56,7 +56,7 @@ set tags=./tags;
 set mouse=a
 set ttymouse=xterm2
 
-set statusline=%F%m%r%h%w\ [%{&ff}/%Y]\ [\%02.2B]\ [%04l:%04v][%p%%]\ [%L]
+set statusline=%F%m%r%h%w\ [%{&ff}]%y[\%02.2B][%04l:%04v][%p%%][%L]
 
 if has("autocmd")
     " Restore cursor position
