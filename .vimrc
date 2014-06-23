@@ -1,4 +1,4 @@
-set term=screen
+set term=screen                 " screen terminal by default
 
 set nocompatible                " use vim defaults
 set ls=2                        " allways show status line
@@ -42,7 +42,6 @@ filetype plugin on
 set nowrap                      " don't wrap lines
 
 set directory=~/.vim/swp
-
 set path=.,,/usr/include
 
 set t_Co=256
@@ -63,9 +62,9 @@ if has("autocmd")
     au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
     au BufRead,BufNewFile *.hrl set filetype=erlang
 
-    au FileType html setlocal shiftwidth=2 tabstop=2 expandtab softtabstop=2
-    au FileType css setlocal shiftwidth=2 tabstop=2 expandtab softtabstop=2
-    au FileType javascript setlocal shiftwidth=2 tabstop=2 expandtab softtabstop=2
+    au FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
+    au FileType css setlocal shiftwidth=2 tabstop=2 softtabstop=2
+    au FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2
 endif
 
 nmap <C-C> :w! ~/.vim/.tmp<CR>
